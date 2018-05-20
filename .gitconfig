@@ -94,7 +94,8 @@
 	# Prevent showing files whose names contain non-ASCII symbols as unversioned.
 	# http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
 	precomposeunicode = false
-
+  editor = code --wait
+	excludesfile = ~/.gitignore
 	# Speed up commands involving untracked files such as `git status`.
 	# https://git-scm.com/docs/git-update-index#_untracked_cache
 	untrackedCache = true
@@ -148,7 +149,7 @@
 
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
-
+  tool = code
 [push]
 
 	# https://git-scm.com/docs/git-config#git-config-pushdefault
@@ -179,5 +180,12 @@
 	insteadOf = "gist:"
 
 [init]
+	templateDir = ~/.config/git/template/
 
-	defaultBranch = main
+[user]
+	name = Touko Hallasmaa
+	email = hallasmaa.touko@gmail.com
+
+[diff "pandoc"]
+	textconv=pandoc --to=markdown
+	prompt = false

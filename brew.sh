@@ -39,11 +39,9 @@ brew install wget --with-iri
 brew install gnupg
 
 # Install more recent versions of some macOS tools.
-brew install vim --with-override-system-vi
 brew install grep
 brew install openssh
 brew install screen
-brew install php
 brew install gmp
 
 # Install font tools.
@@ -79,6 +77,7 @@ brew install xpdf
 brew install xz
 
 # Install other useful binaries.
+brew install pyenv
 brew install ack
 #brew install exiv2
 brew install git
