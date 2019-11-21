@@ -85,7 +85,6 @@ brew install git-lfs
 brew install gs
 brew install imagemagick --with-webp
 brew install lua
-brew install lynx
 brew install p7zip
 brew install pigz
 brew install pv
@@ -94,7 +93,8 @@ brew install rlwrap
 brew install ssh-copy-id
 brew install tree
 brew install vbindiff
-brew install zopfli
+
+brew install --HEAD neovim
 
 # Remove outdated versions from the cellar.
 brew cleanup

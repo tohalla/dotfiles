@@ -12,9 +12,16 @@ Thumbs.db
 .tern-port
 *.log
 
+.vscode/
 node_modules/
 
 dist/
+bin/
 tmp/
 
 tags
+tags.*
+
+__pycache__/
+
+.Rhistory
