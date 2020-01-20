@@ -95,6 +95,10 @@ brew install tree
 brew install vbindiff
 
 brew install --HEAD neovim
+brew install the_silver_searcher
+brew install --HEAD universal-ctags/universal-ctags/universal-ctags
+brew install pinentry-mac
+brew install gpg2
 
 # Remove outdated versions from the cellar.
 brew cleanup
