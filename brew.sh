@@ -94,6 +94,7 @@ brew install ssh-copy-id
 brew install tree
 brew install vbindiff
 
+brew install nvm
 brew install --HEAD neovim
 brew install the_silver_searcher
 brew install --HEAD universal-ctags/universal-ctags/universal-ctags
