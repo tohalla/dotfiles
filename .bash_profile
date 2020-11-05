@@ -51,6 +51,9 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
 eval "$(pyenv init -)"
 
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
