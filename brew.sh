@@ -79,6 +79,7 @@ brew install xz
 # Install other useful binaries.
 brew install pyenv
 brew install ack
+brew install fd
 #brew install exiv2
 brew install git
 brew install git-lfs
