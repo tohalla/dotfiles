@@ -57,3 +57,5 @@ source $(brew --prefix nvm)/nvm.sh
 eval "$(pyenv init -)"
 
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+
+eval "$(starship init bash)"
