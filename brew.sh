@@ -105,6 +105,7 @@ brew cask install mactex-no-gui
 brew install gh
 brew install starship
 brew install gron
+brew install git-delta
 
 # Remove outdated versions from the cellar.
 brew cleanup

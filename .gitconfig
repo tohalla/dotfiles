@@ -180,17 +180,40 @@
 	insteadOf = "gist:"
 
 [init]
+
+	defaultBranch = main
 	templateDir = ~/.config/git/template/
 
 [user]
+
 	name = Touko Hallasmaa
 	email = hallasmaa.touko@gmail.com
 
 [diff "pandoc"]
+
 	textconv=pandoc --to=markdown
 	prompt = false
+
 [filter "lfs"]
+
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+
+[pager]
+
+	diff = delta
+	log = delta
+	reflog = delta
+	show = delta
+
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+
+	features = side-by-side line-numbers decorations
+	whitespace-error-style = 22 reverse
+	hunk-header-style = omit
