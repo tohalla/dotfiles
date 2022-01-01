@@ -41,7 +41,6 @@ brew install gnupg
 # Install more recent versions of some macOS tools.
 brew install grep
 brew install openssh
-brew install screen
 brew install gmp
 
 # Install font tools.
@@ -76,11 +75,10 @@ brew install ucspi-tcp # `tcpserver` etc.
 brew install xpdf
 brew install xz
 
-# Install other useful binaries.
 brew install pyenv
-brew install ack
+brew install nvm
+
 brew install fd
-#brew install exiv2
 brew install git
 brew install git-lfs
 brew install gs
@@ -90,18 +88,14 @@ brew install p7zip
 brew install pigz
 brew install pv
 brew install rename
-brew install rlwrap
 brew install ssh-copy-id
 brew install tree
-brew install vbindiff
 
-brew install nvm
 brew install --HEAD neovim
 brew install the_silver_searcher
 brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 brew install pinentry-mac
 brew install gpg2
-brew cask install mactex-no-gui
 brew install gh
 brew install starship
 brew install gron
