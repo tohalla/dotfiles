@@ -106,6 +106,9 @@ brew install gh
 brew install starship
 brew install gron
 brew install git-delta
+brew install jq
+brew install httpie
+brew install tmux
 
 # Remove outdated versions from the cellar.
 brew cleanup
