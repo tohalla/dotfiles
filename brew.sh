@@ -22,18 +22,8 @@ brew install moreutils
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
 brew install gnu-sed --with-default-names
-# Install a modern version of Bash.
-brew install bash
-brew install bash-completion2
 
-# Switch to using brew-installed bash as default shell
-if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
-  echo "${BREW_PREFIX}/bin/bash" | sudo tee -a /etc/shells;
-  chsh -s "${BREW_PREFIX}/bin/bash";
-fi;
-
-# Install `wget` with IRI support.
-brew install wget --with-iri
+brew install wget
 
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
@@ -76,13 +66,13 @@ brew install xpdf
 brew install xz
 
 brew install pyenv
-brew install nvm
+brew install fnm
 
 brew install fd
 brew install git
 brew install git-lfs
 brew install gs
-brew install imagemagick --with-webp
+brew install imagemagick
 brew install lua
 brew install p7zip
 brew install pigz
@@ -100,9 +90,22 @@ brew install gh
 brew install starship
 brew install gron
 brew install git-delta
+brew install difftastic
 brew install jq
 brew install httpie
 brew install tmux
+brew install fish
+brew install nvim
+brew install starship
+brew install tlrc
+brew install ripgrep
+brew install fzf
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+# Switch to using brew-installed fish as default shell
+if ! fgrep -q "${BREW_PREFIX}/bin/fish" /etc/shells; then
+  echo "${BREW_PREFIX}/bin/fish" | sudo tee -a /etc/shells;
+  chsh -s "${BREW_PREFIX}/bin/fish";
+fi;

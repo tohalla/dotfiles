@@ -3,6 +3,8 @@
 	# View abbreviated SHA, description, and history graph of the latest 20 commits.
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
 
+	please = push origin head --force-with-lease
+
 	# View the current working tree status using the short format.
 	s = status -s
 
@@ -20,7 +22,7 @@
 	c = clone --recursive
 
 	# Commit all changes.
-	ca = !git add ':(exclude,attr:builtin_objectmode=160000)' && git commit -av
+	ca = !git add -A && git commit -av
 
 	# Switch to a branch, creating it if necessary.
 	go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
@@ -100,6 +102,7 @@
 	# Speed up commands involving untracked files such as `git status`.
 	# https://git-scm.com/docs/git-update-index#_untracked_cache
 	untrackedCache = true
+	ignorecase = true
 
 [color]
 
@@ -165,6 +168,7 @@
 	insteadOf = "gh:"
 	pushInsteadOf = "github:"
 	pushInsteadOf = "git://github.com/"
+	insteadOf = https://github.com/
 
 [url "git://github.com/"]
 
@@ -189,6 +193,7 @@
 
 	name = Touko Hallasmaa
 	email = hallasmaa.touko@gmail.com
+	signingkey = 13CC634AB5FB69A4
 
 [diff "pandoc"]
 
@@ -202,6 +207,15 @@
 	process = git-lfs filter-process
 	required = true
 
+[diff]
+	tool = difftastic
+
+[difftool]
+	prompt = false
+
+[difftool "difftastic"]
+	cmd = difft "$LOCAL" "$REMOTE"
+
 [pager]
 
 	diff = delta
@@ -211,10 +225,20 @@
 
 
 [interactive]
-	diffFilter = delta --color-only
+    diffFilter = delta --color-only
+[add.interactive]
+    useBuiltin = false
 
 [delta]
-
 	features = side-by-side line-numbers decorations
 	whitespace-error-style = 22 reverse
 	hunk-header-style = omit
+
+[alias]
+	dft = difftool
+
+[includeif "gitdir:~/projects/measur/"]
+  path = ~/projects/measur/.gitconfig
+[rerere]
+	enabled = true
+
