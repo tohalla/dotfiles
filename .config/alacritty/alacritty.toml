@@ -467,3 +467,6 @@ program = "/opt/homebrew/bin/fish"
 decorations = "none"
 
 [terminal]
+
+[env]
+TERM = "xterm-256color"
