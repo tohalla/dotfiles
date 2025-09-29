@@ -35,3 +35,8 @@ set -gx PYTHONIOENCODING "UTF-8"
 
 # https://github.com/keybase/keybase-issues/issues/2798
 set -gx GPG_TTY $(tty)
+
+fish_add_path ~/go/bin \
+  ~/.cargo/bin \
+  /usr/local/bin \
+  /usr/bin \
