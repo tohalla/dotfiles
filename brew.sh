@@ -82,24 +82,26 @@ brew install ssh-copy-id
 brew install tree
 
 brew install --HEAD neovim
-brew install the_silver_searcher
 brew install --HEAD universal-ctags/universal-ctags/universal-ctags
-brew install pinentry-mac
-brew install gpg2
-brew install gh
-brew install starship
-brew install gron
-brew install git-delta
+brew install bat
 brew install difftastic
-brew install jq
-brew install httpie
-brew install tmux
 brew install fish
-brew install nvim
-brew install starship
-brew install tlrc
-brew install ripgrep
 brew install fzf
+brew install gh
+brew install git-delta
+brew install gpg2
+brew install gron
+brew install httpie
+brew install jq
+brew install nvim
+brew install pinentry-mac
+brew install ripgrep
+brew install starship
+brew install the_silver_searcher
+brew install tldr
+brew install tlrc
+brew install tmux
+brew install wget
 
 # Remove outdated versions from the cellar.
 brew cleanup

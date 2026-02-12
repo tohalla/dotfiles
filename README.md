@@ -15,7 +15,7 @@ Some of the functionality of these dotfiles depends on formulae installed by `br
 To sync local dotfiles, `cd` into your `dotfiles` repository and then:
 
 ```bash
-source bootstrap.sh
+./bootstrap.fish
 ```
 
 ## Sensible macOS defaults
