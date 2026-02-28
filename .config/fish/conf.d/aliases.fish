@@ -104,7 +104,4 @@ end
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
 
-# Print each PATH entry on a separate line
-alias path='echo -e $PATH | tr -s " " "\n"'
-
 abbr hr history --merge
